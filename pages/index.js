@@ -5,6 +5,8 @@ import aChef from '../public/achef.png';
 import MainGrid from '../src/components/MainGrid';
 import Carrossel from '../src/components/Carrossel';
 import Box from '../src/components/Box';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
 
 
 // function CardapioPratos() {
@@ -31,6 +33,12 @@ export default function Home() {
   return (
   
     <MainGrid>
+      {/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"></link> */}
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Work+Sans:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet"></link>
+       
       <div className='fotoDestaque' style={{ gridArea: 'fotoDestaque'}} >
       <Box> 
       <Image src={fotoDestaque} alt="Foto Destaque" width={1440} height={537} />
@@ -56,12 +64,12 @@ export default function Home() {
        <Box>
          Cardápio
        </Box>
-
-       <Carrossel>
-         inserir carrossel
-       </Carrossel>
-
-       </div>
+      </div>
+       
+       <Box>
+      <Carrossel>
+      </Carrossel>
+      </Box>
 
        <Box>
          A Cozinheira
