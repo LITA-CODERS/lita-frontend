@@ -1,10 +1,28 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-  body {
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+   body {
+    font-family: 'Roboto';
+    background-color: #F9E2D2;
+  }
+
+    #__next {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+  }
+
+  .img {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 `
 
