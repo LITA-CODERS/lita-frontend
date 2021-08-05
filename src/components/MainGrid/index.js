@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 const MainGrid = styled.main`
 
     
@@ -23,12 +24,25 @@ margin-top: 200px;
 
   }
   .sobreLita {
-    display: grid;
-    max-width: vmax;
-    padding: 10px;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    font-family: 'Roboto'
+    
+    @media(min-width: 1007px) { 
+     display: grid;
+     max-width: vmax;
+     padding: 10px;
+     justify-content: center;
+     grid-template-columns: 1fr 1fr;
+     font-family: 'Roboto'
+    }
+      
+    @media(min-width: 640px){
+      <BoxMobile>
+      display: flex;
+      max-width: vmax;
+      padding: 10px;
+      justify-content: center;
+      font-family: 'Roboto'
+      </BoxMobile>
+      }
   }
 
   .cardapio {
@@ -39,11 +53,22 @@ margin-top: 200px;
   }
 
   .aChef {
-    display: grid;
-    max-width: vmax;
-    padding: 10px;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
+    @media(min-width: 1080px) { 
+     display: grid;
+     max-width: vmax;
+     padding: 10px;
+     justify-content: center;
+     grid-template-columns: 1fr 1fr;
+
+    @media(min-width: 860px){
+      <BoxMobile>
+      display: flex;
+      max-width: vmax;
+      padding: 10px;
+      justify-content: center;
+      font-family: 'Roboto'
+      <BoxMobile>
+      }
   }
 `;
 

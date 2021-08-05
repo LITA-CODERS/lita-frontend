@@ -25,7 +25,7 @@ const items = [
     }
   ];
   
-  const Example = (props) => {
+  const Carrossel = (props) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
   
@@ -73,7 +73,7 @@ const items = [
     );
   }
   
-  export default Example;
+  export default Carrossel;
  
 ;
 
