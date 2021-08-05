@@ -1,4 +1,19 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import React, { Component } from 'react';
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    Container,
+    Row,
+    Col,
+    Jumbotron,
+    Button
+} from 'reactstrap';
 
 const GlobalStyle = createGlobalStyle`
   
