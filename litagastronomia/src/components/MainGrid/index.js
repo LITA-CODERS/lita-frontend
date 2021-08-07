@@ -4,7 +4,7 @@ import styled from "styled-components";
 const MainGrid = styled.main`
 
     
-margin-top: 200px;
+margin-top: 200x;
     margin-left: 35px;
     margin-right: 35px;
     max-width: vmax;

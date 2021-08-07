@@ -8,38 +8,59 @@ import Box from '../src/components/Box';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 import BoxMobile from '../src/components/BoxMobile';
-
-
-// function CardapioPratos() {
-//   return(
-
-//   )
-// }
-
-
-// const Header = styled.header`
-//   position: absolute;
-//   width: 1440px;
-//   height: 126px;
-//   left: 0px;
-//   top: 0px;
-//   background: rgba(249, 226, 210, 0.8);
-//   box-shadow: 10px 0px 25px rgba(169, 129, 101, 0.5);
-//   `;
-
-
-  
+import logo from '../public/logo.png';
+import { MenuItems } from '../src/components/Navbar/MenuItems';
+import Navbar from '../src/components/Navbar/Navbar';
+ 
 
 export default function Home() {
   return (
-  
-    <MainGrid>
-      {/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"></link> */}
 
+    <MainGrid>
+         
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Work+Sans:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet"></link>
-       
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+      
+        
+        <Navbar>
+          <nav className="NavbarItems">
+            <ul className='nav-menu'>
+              <li>
+                 <a className={ MenuItems[0].cName } href={ MenuItems[0].url }>
+                   {MenuItems[0].title}
+                 </a>
+              </li>       
+            </ul>
+                
+                <ul className='nav-menu'>
+              <li>
+                 <a className={ MenuItems[1].cName } href={ MenuItems[1].url }>
+                   {MenuItems[1].title}
+                 </a>
+              </li>       
+            </ul>   
+            <div className="navbar-logo" ><Image src={logo} alt="Foto Destaque" unsized='true' /><i className="fab fa-react"></i></div>  
+            <ul className='nav-menu'>
+              <li>
+                 <a className={ MenuItems[2].cName } href={ MenuItems[2].url }>
+                   {MenuItems[2].title}
+                 </a>
+              </li>       
+            </ul>
+                <ul className='nav-menu'>
+              <li>
+                 <a className={ MenuItems[3].cName } href={ MenuItems[3].url }>
+                   {MenuItems[3].title}
+                 </a>
+              </li>       
+            </ul>   
+          </nav>
+        </Navbar>
+
       <div className='fotoDestaque' style={{ gridArea: 'fotoDestaque'}} >
       <Box> 
       <Image src={fotoDestaque} alt="Foto Destaque" width={1440} height={537} />
@@ -53,7 +74,7 @@ export default function Home() {
        
        <div className='sobreLita' style={{ gridArea: 'sobreLita'}} >
        <BoxMobile>
-         <Image src={sobreLita} alt="Sobre a Litá" unsized />
+         <Image src={sobreLita} alt="Sobre a Litá" unsized='true' />
        </BoxMobile>  
 
        <BoxMobile>
@@ -84,7 +105,7 @@ export default function Home() {
        </Box>
 
        <Box>
-       <Image src={aChef} alt="A Chef" unsized />
+       <Image src={aChef} alt="A Chef" unsized='true' />
        </Box>
        </div>
 
