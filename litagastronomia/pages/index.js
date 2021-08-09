@@ -27,16 +27,16 @@ export default function Home() {
         
        <Navbar />
 
-        <div className='fotoDestaque'>
+        <div className='fotoDestaque' style={{ fotoDestaque }}>
          <Image src={fotoDestaque} alt="Foto Destaque" unsized='true' />
         </div>
 
         <Box>
-         <h1 className='title'> Sobre a Litá </h1>
+         <h1 id='sobre' className='title'> Sobre a Litá </h1>
         </Box>
 
           <Box>
-            <div className='sobreLita' style={{ gridArea: 'sobreLita'}} >
+            <div className='sobreLita' style={{ sobreLita }} >
                <Box>
                 <Image src={sobreLita} alt="Sobre a Litá" unsized='true' />
               </Box>
@@ -48,7 +48,7 @@ export default function Home() {
             </div>
           </Box>
        
-        <div className='cardapio' style={{ gridArea: 'cardapio'}} >
+        <div id='cardapio' className='cardapio' style={{ gridArea: 'cardapio'}} >
           <Box>
             <h1 className='title'> Cardápio </h1>
           </Box>
@@ -59,7 +59,7 @@ export default function Home() {
         </Box>
 
         <Box>
-          <h1 className='title'> A Cozinheira </h1>
+          <h1 id='achef' className='title'> A Cozinheira </h1>
         </Box>
 
         <div className='aChef' style={{ gridArea: 'aChef'}} >
@@ -72,11 +72,6 @@ export default function Home() {
             <Image src={aChef} alt="A Chef" unsized='true' />
           </Box>
        </div>
-
-        <Box>
-         <h1 className='title'> Peça sua Refeição </h1>
-        </Box>
-        
 
       <Footer>
       </Footer>

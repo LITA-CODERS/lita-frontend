@@ -4,12 +4,18 @@ import goomer from '../../../public/goomer.png';
 import instagram from '../../../public/instagram.png';
 import logofooter from '../../../public/logofooter.png';
 import FooterStyle from './FooterStyle.js';
+import Box from '../Box';
 
 const Footer = () => {
 
     return(
 
         <FooterStyle>
+
+            <Box>
+                <h1 id='contato' className='title'> Peça sua Refeição </h1>
+            </Box>
+        
             <div className='facaPedido'>
                 <Image src={whatsapp} alt="Whatsapp" unsized='true' />
                 <Image src={goomer} alt="Goomer" unsized='true' />

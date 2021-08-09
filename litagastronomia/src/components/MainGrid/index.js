@@ -11,17 +11,15 @@ const MainGrid = styled.main`
   align-content: space-around;
   
   .fotoDestaque {
-    display: grid;
-    margin: 0px;
-    max-width: 100%;
+    display: flex;
+    max-width: vmax;
     justify-content: center;
     align-items: center;
     justify-items: center;
 
     @media(min-width: 640px){
-      display: grid;
-      margin: 0px;
-      max-width: 100%;
+      display: flex;
+      max-width: vmax;
       justify-content: center;
       align-items: center;
       justify-items: center;
@@ -39,7 +37,7 @@ const MainGrid = styled.main`
      background-color: #F9E2D2;
     }
       
-    @media(min-width: 640px){
+    @media(min-width: 640px) {
       <BoxMobile>
       display: flex;
       max-width: vmax;

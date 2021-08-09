@@ -26,6 +26,8 @@ const GlobalStyle = createGlobalStyle`
    body {
     font-family: 'Roboto';
     background-color: #F9E2D2;
+    min-height: vmax;
+    min-width: vmax;
   }
 
     .title { 
@@ -39,13 +41,14 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       padding: 0;
       display: flex;
-      min-height: 100vh;
+      min-height: vmax;
+      min-width: vmax;
       flex-direction: column;
       justify-content: center;
   }
 
   .img {
-    max-width: 100%;
+    max-width: vmax;
     height: auto;
     display: block;
   }
