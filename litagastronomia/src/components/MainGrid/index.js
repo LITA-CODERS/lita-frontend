@@ -78,5 +78,4 @@ const MainGrid = styled.main`
 
   }
 `;
-
 export default MainGrid;

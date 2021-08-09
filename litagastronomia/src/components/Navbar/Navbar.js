@@ -1,85 +1,47 @@
-import styled from 'styled-components';
+import { MenuItems } from './MenuItems.js';
+import Image from 'next/image';
+import logo from '../../../public/logo.png';
+import NavbarStyle from './NavbarStyle'
 
-const Navbar = styled.nav`
+const Navbar = () => {
 
-    margin-top: 20px;
-    margin-left: 0px;
-    margin-bottom: 10px;
-    background-color: #F9E2D2CC;
-    height: 90px;
-    border-radius: 0px;
-    drop-shadow(10px 0px 25px 0px #A9816580);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
+  return (
 
-    .NavbarItems {  
-        margin-top: 20px;
-        margin-bottom: 10px;
-        background-color: #F9E2D2CC;
-        height: 90px;
-        border-radius: 25px;
-        drop-shadow: 10px 0px 25px 0px #A9816580;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-        font-family: "Work Sans";
-        font-weight: bold;
-        align-content: space-between;
-      }
-    
-      .navbar-logo {
-        justify-self: start;
-        margin-left: 20px;
-        cursor: pointer;
-        padding: 20px;
-      }
-    
-      .nav-menu {
-        display: grid;
-        grid-template-columns: repeat(5, auto);
-        grid-gap: 20px;
-        list-style: none;
-        text-align: center;
-        text-decoration: none;
-        width: maxvw;
-        justify-content: end;
-      }
-    
-      .nav-links {
-        color: #441328;
-        text-decoration: none;
-        padding: 0.3rem 0.3rem;
-      }
-    
-      .nav-links:hover {
-        color: #864D5F;
-        text-decoration: none;
-        padding: 0.3rem 0.3rem;
-      }    
+          <NavbarStyle>
+          <nav className='NavbarItems'>
+            <ul className='nav-menu'>
+              <li>
+                 <a className={ MenuItems[0].cName } href={ MenuItems[0].url }>
+                   {MenuItems[0].title}
+                 </a>
+              </li>       
+            </ul>
+                
+                <ul className='nav-menu'>
+              <li>
+                 <a className={ MenuItems[1].cName } href={ MenuItems[1].url }>
+                   {MenuItems[1].title}
+                 </a>
+              </li>       
+            </ul>   
+            <div className="navbar-logo" ><Image src={logo} alt="Foto Destaque" unsized='true' /><i className="fab fa-react"></i></div>  
+            <ul className='nav-menu'>
+              <li>
+                 <a className={ MenuItems[2].cName } href={ MenuItems[2].url }>
+                   {MenuItems[2].title}
+                 </a>
+              </li>       
+            </ul>
+                <ul className='nav-menu'>
+              <li>
+                 <a className={ MenuItems[3].cName } href={ MenuItems[3].url }>
+                   {MenuItems[3].title}
+                 </a>
+              </li>       
+            </ul>   
+          </nav>
+          </NavbarStyle>
 
-    @media screen and (max-width: 1248px) {
-        .NavbarItems {
-            position: absolute;
-            
-        }
-
-        .nav-menu{
-            display: none;
-            flex-direction: column;
-            width: 100%;
-            height: 500px;
-            position: absolute;
-            top: 80px;
-            left: -100%;
-            opacity: 100%;
-            transition: all 0.5s ease;
-
-        }
-    }
-    
-`;
+  )}
 
 export default Navbar;
