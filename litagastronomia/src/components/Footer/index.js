@@ -1,42 +1,35 @@
-import styled from "styled-components";
+import Image from 'next/image';
+import whatsapp from '../../../public/whatsapp.png';
+import goomer from '../../../public/goomer.png';
+import instagram from '../../../public/instagram.png';
+import logofooter from '../../../public/logofooter.png';
+import FooterStyle from './FooterStyle.js';
 
-const Footer = styled.div`
+const Footer = () => {
 
-    .facaPedido {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 30px 250px 30px 250px;
-        width: maxvw;
-    }
+    return(
 
-    .barraFooter {
-        display: flex;
-        height: 250px;
-        width: maxvw;
-        background-color: #441026;
-        margin: 30px 0px 30px 0px;
-        justify-content: center;
-    }
+        <FooterStyle>
+            <div className='facaPedido'>
+                <Image src={whatsapp} alt="Whatsapp" unsized='true' />
+                <Image src={goomer} alt="Goomer" unsized='true' />
+            </div> 
 
-    .textoFooter {
-        display: flex;
-        flex-direction: column;
-        width: maxvw;
-        color: white;
-        margin: 0px 30px 30px 30px;
-        text-align: center;
-        font-family: "Work Sans";
-        font-size: 20px;
-        justify-content: center;
-        align-items: center;
-    }
+            <div className='barraFooter'>
 
-    .logoFooter {
-        display: flex;
-        width: maxvw;
-        justify-content: start;
-    }
-}`
+            <div className='logoFooter'>
+             <div>
+                <Image src={logofooter} alt="Logo Litá Footer" unsized='true' />
+             </div>
+            </div>
+         
+            <div className='textoFooter'>
+             Siga a Litá no Instagram
+             <Image src={instagram} alt="Instagram" width={50} height={50} />
+             </div>
+         </div>
+        </FooterStyle>
+
+    )};
 
 export default Footer;
