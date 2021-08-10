@@ -1,19 +1,19 @@
 export const MenuItems = [
     {
         title: 'Sobre',
-        url: '#sobre',
+        url: '/#sobre',
         cName: 'nav-links'
     },
 
     {
         title: 'Cardápio',
-        url: '#cardapio',
+        url: '/cardapio',
         cName: 'nav-links'
     },
 
     {
         title: 'A Cozinheira',
-        url: '#achef',
+        url: '/#achef',
         cName: 'nav-links'
     },
 

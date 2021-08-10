@@ -4,7 +4,6 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, Ca
 import classnames from 'classnames';
 import BoxCardapioStyle from './BoxCardapioStyle';
 import CardStyle from './CardStyle';
-import ButtonStyle from './ButtonStyle';
 
 const BoxCardapio = (props) => {
   const [activeTab, setActiveTab] = useState('1');
@@ -17,10 +16,10 @@ const BoxCardapio = (props) => {
     
     <div>
         <BoxCardapioStyle>
-      <Nav tabs>
+      <Nav tabs >
         <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === '1' })}
+          <NavLink 
+            className={classnames({ active: activeTab === '1' })} className={'button'}
             onClick={() => { toggle('1'); }}
           >
             Pratos
@@ -29,7 +28,7 @@ const BoxCardapio = (props) => {
         
         <NavItem>
           <NavLink
-            className={classnames({ active: activeTab === '2' })}
+            className={classnames({ active: activeTab === '2' })} className={'button'}
             onClick={() => { toggle('2'); }}
           >
             Salgados
@@ -37,15 +36,16 @@ const BoxCardapio = (props) => {
         </NavItem>
         <NavItem>
           <NavLink
-            className={classnames({ active: activeTab === '3' })}
+            className={classnames({ active: activeTab === '3' })} className={'button'}
             onClick={() => { toggle('3'); }}
           >
             Salgados Festa
+            
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink
-            className={classnames({ active: activeTab === '4' })}
+            className={classnames({ active: activeTab === '4' })} className={'button'}
             onClick={() => { toggle('4'); }}
           >
             Doces
@@ -53,7 +53,7 @@ const BoxCardapio = (props) => {
         </NavItem>
         <NavItem>
           <NavLink
-            className={classnames({ active: activeTab === '5' })}
+            className={classnames({ active: activeTab === '5' })} className={'button'}
             onClick={() => { toggle('5'); }}
           >
             Diversos
@@ -61,7 +61,7 @@ const BoxCardapio = (props) => {
         </NavItem>
         <NavItem>
           <NavLink
-            className={classnames({ active: activeTab === '6' })}
+            className={classnames({ active: activeTab === '6' })} className={'button'}
             onClick={() => { toggle('6'); }}
           >
             Pães
