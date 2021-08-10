@@ -14,7 +14,7 @@ const BoxCardapioStyle = styled.div` {
     color: #000000;
     text-decoration: none;
     background-color: #FFFFFF;
-    border-radius-top: 20px;
+    border-radius-top: 10px;
     
 };
 
@@ -24,7 +24,7 @@ const BoxCardapioStyle = styled.div` {
     color: #FFFFFF;
     text-decoration: none;
     background-color: #864D5F;
-    border-radius-top: 20px;
+    border-radius-top: 10px;
 
 };  
 
@@ -34,7 +34,7 @@ const BoxCardapioStyle = styled.div` {
     color: #FFFFFF;
     text-decoration: none;
     background-color: #864D5F;
-    border-radius-top: 20px;
+    border-radius-top: 10px;
 `;
 
 export default BoxCardapioStyle;
