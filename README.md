@@ -1,4 +1,4 @@
-<h1 align="center">🔺 Litá - Gastronomia Afetiva - Cardápio Digital 🔺</h1>
+<h1 align="center">🔺 Litá Gastronomia Afetiva - Cardápio Digital 🔺</h1>
 
 ## 📕 Índice
 
