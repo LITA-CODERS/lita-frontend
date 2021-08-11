@@ -22,23 +22,21 @@
 # Tecnologias
 
 - 🧩 **Tecnologias**
-  - [Javascript](https://nodejs.org/en/)
-  - [HTML](https://www.typescriptlang.org/)
-  - [CSS](https://expressjs.com/pt-br/)
-  - [Node.JS] (https://nodejs.org/en/)
-  - [Frameworks]:
-    - [React](https://typeorm.io/#/)
-    - [Next.JS](https://typeorm.io/#/)
+  - [Javascript] (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+  - [HTML5]
+  - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS/)
+  - [NodeJS](https://nodejs.org/en/)
+  - [Frameworks]
+    - [React](https://pt-br.reactjs.org/)
+    - [Next.JS](https://nextjs.org/)
    
 - 🧲 **Dependências**
   - [Babel](https://babeljs.io/)
-  - [Boostrap]
-  - [React-DOM]
-  - [Reactstrap]
-  - [Node-sass]
-  - [Next]
-  - [Next-images]
-  - [Styled-Components](https://www.npmjs.com/package/tsyringe)
+  - [Boostrap](https://getbootstrap.com/)
+  - [React-DOM](https://pt-br.reactjs.org/docs/react-dom.html)
+  - [Reactstrap](https://reactstrap.github.io/)
+  - [Node-sass](https://www.npmjs.com/package/node-sass)
+  - [Styled-Components](https://styled-components.com/)
 
 <hr>
 
@@ -66,17 +64,18 @@
 
 ```bash
 # Execute este comando para clonar o projeto
-$ git clonegit@github.com:LITA-CODERS/Lita-back-end-rest-api.git
+$ git clonegit@github.com:LITA-CODERS/lita-frontend.git
 # ou use a opção de download.
 
 # Entre na pasta com
-$ cd Lita-back-end-rest-api
+$ cd litagastronomia
 
 # Instale as dependências
 $ yarn ou npm install
-
-# Crie o banco de dados e as tabelas utilizando o comando
-$ yarn typeorm migration:run ou npm typeorm migration:run
+$ npx create-next-app --example with styled-components
+$ npm install --save bootstrap   
+$ npm install --save reactstrap react react-dom
+$ npm add add next-images       
 
 # Rode a aplicação usando o comando
 $ yarn dev ou npm run dev
@@ -85,20 +84,9 @@ $ yarn dev ou npm run dev
 $ yarn test ou npm test
 ```
 
-## 👷🏿 Testes automatizados 👷🏿
-Por fim de garantir o funcionamento correto de todas as funcionalidades da aplicação, foi realizado testes unitários e de integrações utilizando o Jest, todos os testes se encontram dentro da pasta tests presentes em seu respectivo useCase, resultados obtidos foram quase **100%** de cobertura nos testes faltando bem pouco para isto.
-
-<img src="https://i.imgur.com/PjR63QO.png">
-
 ## 👨🏽‍🚀 Deploy 
 **__Heroku__**: https://github.com/LITA-CODERS/Lita-back-end-rest-api/deployments/activity_log?environment=lita12
 
-
-##  💁🏿‍♂️ Notas do desenvolvedor
-- Foi pensndo em um sistema de autenticação, que inclusive esta todo em funcionamento, só não foi implementado no front pelo tempo curto
-- Todo o projeto foi desenhado para ser o mais limpo possível utilizando conceitos de __**SOLID**__ e __CLEAN CODE__, visando qualidade do código, também esta sendo utilizando o repository pattern.
-- Plataforma escolhida para o deploy foi o **heroku**, pela praticidade que ela nós entrega.
-<!-- LICENSE -->
 
 # Licença
 
