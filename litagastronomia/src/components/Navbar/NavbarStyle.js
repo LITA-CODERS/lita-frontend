@@ -16,8 +16,8 @@ const NavbarStyle = styled.div`
   font-size: 1.2rem;
 
   .NavbarItems {  
-      margin-top: 20px;
-      margin-bottom: 10px;
+      // margin-top: 20px;
+      // margin-bottom: 10px;
       background-color: #F9E2D2CC;
       height: 90px;
       border-radius: 25px;
@@ -33,9 +33,12 @@ const NavbarStyle = styled.div`
   
     .navbar-logo {
       justify-self: start;
-      margin-left: 20px;
+      margin-left: 10px;
+      margin-top: 10px;
       cursor: pointer;
-      padding: 20px;
+      padding: 15px;
+      height: 97,81px;
+      width: 200px;
     }
   
     .nav-menu {

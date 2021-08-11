@@ -8,6 +8,7 @@ const FooterStyle = styled.div`
         align-items: center;
         margin: 70px 250px 30px 250px;
         width: maxvw;
+        cursor: pointer;
     }
 
     .barraFooter {
@@ -43,6 +44,7 @@ const FooterStyle = styled.div`
         text-align: center;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
 
     .logoFooter {
@@ -52,6 +54,7 @@ const FooterStyle = styled.div`
         width: maxvw;
         justify-content: start;
         align-content: flex-start;
+        cursor: pointer;
     }
 }`
 

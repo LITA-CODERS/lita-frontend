@@ -76,11 +76,13 @@ export default function Home() {
         <div className='aChef' style={{ gridArea: 'aChef'}} >
           <BoxSobre>
              <p align='justify'>
-               Sou Talita Ghiotti, tenho 34 e minha primeira formação foi em Design de Interiores, na verdade poderia dizer que antes disso me formei na construção de trabalho quanto à minha comunicação, passando pelas artes cênicas depois para Design de Interiores, Design Gráfico e então a Gastronomia.
-               O caminho até aqui seguiu-se por 10 anos nas profissões anteriores e em 2015 iniciei meus estudos e trajetória paralela com a gastronomia.
-               Iniciei de modo autodidata, depois passei a frequentar cursos livres, em alguns momentos no Centro de Qualificação RP, tive a oportunidade de passar pela colaboração e dinamismo de contribuir com os meus conhecimentos ministrando em uma Oficina Gastronômica no Barracão Simioni, nas Feiras pela cidade de Ribeirão Preto, assim como os Eventos do Caipora Festival  que puderam me moldar como uma pessoa melhor e sempre com a crença de que juntos somos mais fortes. Assim em um momento dentro da Pandemia de Covid-19 no ano de 2020 cheguei até os meus estudos no curso Técnico em Cozinha na ETEC – José Martimiano da Silva.
-               Em 2021, termino o primeiro curso dentro dessa carreira que tem muito dinamismo, amor e trabalho duro.
-               Para mim, este curso técnico é o primeiro diploma que carrego sobre a profissão que escolhi depois de uma longa trajetória em outros caminhos, no qual é desafiador e muito encantador traçar este caminho. da Cozinha Quente, dos pratos que acolhem e que te levam à um momento gostoso como um encorpado Raviolli, a panificação fazendo parte deste momento, nutrindo com um básico de "farinha, água e sal" onde podemos ter um acompanhamento ou prato principal sensacionais e ao final uma boa e simples sobremesa, para conduzir o bom e velho cafézinho.
+                Meu nome é Talita Ghiotti, tenho 34 e minha primeira formação foi em Design de Interiores, na verdade poderia dizer que antes disso me formei na construção de trabalho quanto à minha comunicação, passando pelas artes cênicas depois para Design de Interiores, Design Gráfico e então a Gastronomia.
+                O caminho até aqui seguiu-se por 10 anos nas profissões anteriores e em 2015 iniciei meus estudos e trajetória paralela com a gastronomia.
+                Iniciei de modo autodidata, depois passei a frequentar cursos livres, em alguns momentos no Centro de Qualificação RP. 
+                Nesse período, tive a oportunidade de passar pela colaboração e dinamismo de contribuir com os meus conhecimentos, ministrando uma Oficina Gastronômica no Barracão Simioni, participando das Feiras pela cidade de Ribeirão Preto, assim como os Eventos, tais como o Caipora Festival que me moldaram/moldam como uma pessoa melhor, seguindo sempre com a crença de que juntos somos mais fortes. 
+                Assim em um momento dentro da Pandemia de Covid-19 no ano de 2020 cheguei até os meus estudos no curso Técnico em Cozinha na ETEC – José Martimiano da Silva.
+                Em 2021, termino o primeiro curso dentro dessa carreira que tem muito dinamismo, amor e trabalho árduo.
+                Para mim, este curso técnico é o primeiro diploma que carrego sobre a profissão que escolhi depois de uma longa trajetória em outros caminhos, é uma constante de desafios e encantos traçá-lo.
              </p>
           </BoxSobre>
 
