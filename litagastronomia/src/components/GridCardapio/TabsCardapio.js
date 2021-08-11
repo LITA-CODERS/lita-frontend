@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
@@ -7,14 +7,27 @@ import CardStyle from './CardStyle';
 import Image from 'next/image';
 import fotocapa from '../../../public/fotocapa.png'
 import TituloCategoria from './CardStyle'
+import { api } from '../../services/api';
+import { Toast } from 'bootstrap';
+import { toast } from 'react-toastify';
 
 const TabsCardapio = (props) => {
   const [activeTab, setActiveTab] = useState('1');
+  const [dishes, SetDishes] = useState([])
 
   const toggle = tab => {
     if(activeTab !== tab) setActiveTab(tab);
   }
-
+  const dishesData = async (id) => {
+    try {
+        const response = await api.get(`/categories/${id}`);
+				SetDishes(response.data);
+				toast.success("Busca feita com sucesso");
+    } catch (error) {
+      toast.error(`Erro ao busca os pratos ${error}`)
+    }
+  
+  }
   return (
     
     
@@ -29,7 +42,10 @@ const TabsCardapio = (props) => {
         <NavItem>
           <NavLink 
             className={classnames({ active: activeTab === '1' })} className={'button'}
-            onClick={() => { toggle('1'); }}
+              onClick={() => {
+                dishesData("0efdc46f-57b9-47e8-9537-1abfebfd9221")
+                toggle("1");;
+              }}
           >
             Pratos
           </NavLink>
@@ -38,7 +54,10 @@ const TabsCardapio = (props) => {
         <NavItem>
           <NavLink
             className={classnames({ active: activeTab === '2' })} className={'button'}
-            onClick={() => { toggle('2'); }}
+              onClick={() => {
+                dishesData("256f279d-dbbc-4cc6-8b88-d3b846ee8080");
+                toggle('2');
+              }}
           >
             Salgados
           </NavLink>
@@ -46,7 +65,10 @@ const TabsCardapio = (props) => {
         <NavItem>
           <NavLink
             className={classnames({ active: activeTab === '3' })} className={'button'}
-            onClick={() => { toggle('3'); }}
+              onClick={() => {
+                dishesData("b331b0c4-49b2-45e2-87db-6234ad4c474e")
+                toggle('3');
+              }}
           >
             Salgados Festa
             
