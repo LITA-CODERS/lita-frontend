@@ -13,7 +13,11 @@ const Footer = () => {
         <FooterStyle>
 
             <Box>
+            <Box>
+            <Box>
                 <h1 id='contato' className='title'> Peça sua Refeição </h1>
+            </Box>
+            </Box>
             </Box>
         
             <div className='facaPedido'>

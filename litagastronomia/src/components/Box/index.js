@@ -7,7 +7,7 @@ const Box = styled.div`
   background-color: #F9E2D2;
   border-radius: 8px;
   max-width: vmax;
-  margin-top: 10px;
+  margin-top: 15px;
   justify-content: center;
   align-items: center;
   justify-items: center;

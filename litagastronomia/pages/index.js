@@ -92,7 +92,7 @@ export default function Home() {
             <ButtonStyle className="button">Veja meus pratos</ButtonStyle>
          </Link>
        </BoxMobile>
-
+      
       <Footer>
       </Footer>
 
