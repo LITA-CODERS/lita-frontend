@@ -35,7 +35,11 @@ const Footer = () => {
          
             <div className='textoFooter'>
              Siga a Litá no Instagram
-             <Image src={instagram} alt="Instagram" width={50} height={50} />
+            
+                <div className="logoInsta">
+                 <Image src={instagram} alt="Instagram" width={50} height={50} />
+                </div>
+                
              </div>
          </div>
         </FooterStyle>
