@@ -1,7 +1,8 @@
 import { MenuItems } from './MenuItems.js';
 import Image from 'next/image';
 import logo from '../../../public/logo.png';
-import NavbarStyle from './NavbarStyle'
+import NavbarStyle from './NavbarStyle';
+import Link from 'next/link';
 
 const Navbar = () => {
 
@@ -23,8 +24,10 @@ const Navbar = () => {
                    {MenuItems[1].title}
                  </a>
               </li>       
-            </ul>   
+            </ul> 
+            <Link href={{ pathname: '/'}}>
             <div className="navbar-logo" ><Image src={logo} alt="Foto Destaque" unsized='true' /><i className="fab fa-react"></i></div>  
+            </Link>
             <ul className='nav-menu'>
               <li>
                  <a className={ MenuItems[2].cName } href={ MenuItems[2].url }>

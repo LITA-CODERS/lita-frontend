@@ -5,6 +5,7 @@ import instagram from '../../../public/instagram.png';
 import logofooter from '../../../public/logofooter.png';
 import FooterStyle from './FooterStyle.js';
 import Box from '../Box';
+import Link from 'next/link';
 
 const Footer = () => {
 
@@ -21,15 +22,21 @@ const Footer = () => {
             </Box>
         
             <div className='facaPedido'>
+                <Link href={{ pathname: 'https://wa.me/5516988317850'}}> 
                 <Image src={whatsapp} alt="Whatsapp" unsized='true' />
+                </Link>
+                <Link href={{ pathname: 'https://goomer.com.br/'}}> 
                 <Image src={goomer} alt="Goomer" unsized='true' />
+                </Link>
             </div> 
 
             <div className='barraFooter'>
 
             <div className='logoFooter'>
              <div>
-                <Image src={logofooter} alt="Logo Litá Footer" unsized='true' />
+                <Link href={{ pathname: '/'}}>
+                 <Image src={logofooter} alt="Logo Litá Footer" unsized='true' />
+                </Link>
              </div>
             </div>
          
@@ -37,7 +44,9 @@ const Footer = () => {
              Siga a Litá no Instagram
             
                 <div className="logoInsta">
-                 <Image src={instagram} alt="Instagram" width={50} height={50} />
+                    <Link href={{ pathname: 'https://www.instagram.com/lita.gastronomia/'}}>
+                     <Image src={instagram} alt="Instagram" width={50} height={50} />
+                    </Link>
                 </div>
                 
              </div>
