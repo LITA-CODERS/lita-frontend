@@ -5,7 +5,13 @@ import classnames from 'classnames';
 import BoxCardapioStyle from './BoxCardapioStyle';
 import CardStyle from './CardStyle';
 import Image from 'next/image';
-import fotocapa from '../../../public/fotocapa.png'
+import fotocapa from '../../../public/fotocapa.png';
+import pratos from '../../../public/pratos.png';
+import salgados from '../../../public/salgados.png';
+import salgadosfesta from '../../../public/salgadosfesta.png';
+import doces from '../../../public/doces.png';
+import diversos from '../../../public/diversos.png';
+import paes from '../../../public/paes.png';
 import TituloCategoria from './CardStyle'
 import { api } from '../../services/api';
 import { toast } from 'react-toastify';
@@ -109,7 +115,7 @@ const TabsCardapio = (props) => {
 				<TabContent activeTab={activeTab}>
 					<TabPane tabId="1">
 						<imagemCardapio>
-							<Image src={fotocapa} alt="Foto Destaque" unsized="true" />
+							<Image src={pratos} alt="Pratos" unsized="true" />
 						</imagemCardapio>
 						<BoxCardapioStyle>
 							<Row>
@@ -137,7 +143,7 @@ const TabsCardapio = (props) => {
 
 					<TabPane tabId="2">
 						<imagemCardapio>
-							<Image src={fotocapa} alt="Foto Destaque" unsized="true" />
+							<Image src={salgados} alt="Salgados" unsized="true" />
 						</imagemCardapio>
 						<BoxCardapioStyle>
 							<Row>
@@ -165,7 +171,7 @@ const TabsCardapio = (props) => {
 
 					<TabPane tabId="3">
 						<imagemCardapio>
-							<Image src={fotocapa} alt="Foto Destaque" unsized="true" />
+							<Image src={salgadosfesta} alt="Salgados Festa" unsized="true" />
 						</imagemCardapio>
 						<BoxCardapioStyle>
 							<Row>
@@ -193,7 +199,7 @@ const TabsCardapio = (props) => {
 
 					<TabPane tabId="4">
 						<imagemCardapio>
-							<Image src={fotocapa} alt="Foto Destaque" unsized="true" />
+							<Image src={doces} alt="Doces" unsized="true" />
 						</imagemCardapio>
 						<BoxCardapioStyle>
 							<Row>
@@ -221,7 +227,7 @@ const TabsCardapio = (props) => {
 
 					<TabPane tabId="5">
 						<imagemCardapio>
-							<Image src={fotocapa} alt="Foto Destaque" unsized="true" />
+							<Image src={diversos} alt="Diversos" unsized="true" />
 						</imagemCardapio>
 						<BoxCardapioStyle>
 							<Row>
@@ -249,7 +255,7 @@ const TabsCardapio = (props) => {
 
 					<TabPane tabId="6">
 						<imagemCardapio>
-							<Image src={fotocapa} alt="Foto Destaque" unsized="true" />
+							<Image src={paes} alt="Pães" unsized="true" />
 						</imagemCardapio>
 						<BoxCardapioStyle>
 							<Row>
