@@ -6,16 +6,17 @@ const FooterStyle = styled.div`
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 30px 250px 30px 250px;
+        margin: 70px 250px 30px 250px;
         width: maxvw;
     }
 
     .barraFooter {
         display: flex;
+        flex-direction: columns;
         height: 250px;
         width: maxvw;
         background-color: #441026;
-        margin: 30px 0px 30px 0px;
+        margin: 150px 0px 30px 0px;
         justify-content: center;
     }
 
@@ -34,8 +35,10 @@ const FooterStyle = styled.div`
 
     .logoFooter {
         display: flex;
+        flex-direction: column;
         width: maxvw;
         justify-content: start;
+        align-content: flex-end;
     }
 }`
 

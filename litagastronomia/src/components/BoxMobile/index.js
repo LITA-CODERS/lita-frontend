@@ -9,6 +9,7 @@ const BoxMobile = styled.div`
     max-width: vmax;
     margin-left: 20px;
     margin-top: 40px;
+    margin-bottom: 10px;
     justify-content: center;
     align-items: center;
     justify-items: center;
