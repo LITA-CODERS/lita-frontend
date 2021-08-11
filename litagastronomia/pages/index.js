@@ -10,7 +10,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 import Navbar from '../src/components/Navbar/Navbar';
 import Footer from '../src/components/Footer';
- 
+import BoxMobile from '../src/components/BoxMobile';
+import BoxSobre from '../src/components/BoxSobre';
+import ButtonStyle from '../src/components/Button/ButtonStyle'
 
 export default function Home() {
   return (
@@ -31,22 +33,26 @@ export default function Home() {
          <Image src={fotoDestaque} alt="Foto Destaque" unsized='true' />
         </div>
 
-        <Box>
+        <BoxMobile>
          <h1 id='sobre' className='title'> Sobre a Litá </h1>
-        </Box>
-
-          <Box>
+        
+          <BoxSobre>
             <div className='sobreLita' style={{ sobreLita }} >
-               <Box>
+               <BoxSobre>
                 <Image src={sobreLita} alt="Sobre a Litá" unsized='true' />
-              </Box>
-               <Box>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-               </Box>
-
+              </BoxSobre>
+               <BoxSobre>
+                <p align='justify'>
+                  A Litá é um amor que veio brotando aos poucos. A mistura da mudança de vida em ir morar sozinha, com a curiosidade de como a comida é feita, foi assim que tudo surgiu.
+                  Nos primeiros momentos, a necessidade era o que se fazia presente, mas depois, transformar o que se tinha à mão, começou a ser um desafio. A intuição sempre foi companheira e me fez mudar de ares, no trabalho e na vida.
+                  Hoje, o que prezo é a construção de sabores, para que tenhamos mais opções e variedade, sempre... Afinal, comer é aventurar-se.                  <br></br>
+                  <br></br>
+                  A Litá é composta da Cozinha Quente, dos pratos que acolhem e que te levam à um momento gostoso como um encorpado Raviolli, a panificação fazendo parte deste momento, nutrindo com um básico de "farinha, água e sal" onde podemos ter um acompanhamento ou prato principal sensacionais e ao final uma boa e simples sobremesa, para conduzir o bom e velho cafézinho.
+                  </p>
+               </BoxSobre>
             </div>
-          </Box>
+          </BoxSobre>
+          </BoxMobile>
        
         <div id='cardapio' className='cardapio' style={{ gridArea: 'cardapio'}} >
           <Box>
@@ -59,19 +65,33 @@ export default function Home() {
         </Box>
 
         <Box>
-          <h1 id='achef' className='title'> A Cozinheira </h1>
+          <Link href={{ pathname: '/cardapio'}}> 
+          <ButtonStyle className="button">Cardápio Completo</ButtonStyle>
+          </Link>
         </Box>
 
-        <div className='aChef' style={{ gridArea: 'aChef'}} >
-          <Box>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-          </Box>
+        <BoxMobile>
+          <h1 id='achef' className='title'> A Cozinheira </h1>
 
-          <Box>
+        <div className='aChef' style={{ gridArea: 'aChef'}} >
+          <BoxSobre>
+             <p align='justify'>
+               Sou Talita Ghiotti, tenho 34 e minha primeira formação foi em Design de Interiores, na verdade poderia dizer que antes disso me formei na construção de trabalho quanto à minha comunicação, passando pelas artes cênicas depois para Design de Interiores, Design Gráfico e então a Gastronomia.
+               O caminho até aqui seguiu-se por 10 anos nas profissões anteriores e em 2015 iniciei meus estudos e trajetória paralela com a gastronomia.
+               Iniciei de modo autodidata, depois passei a frequentar cursos livres, em alguns momentos no Centro de Qualificação RP, tive a oportunidade de passar pela colaboração e dinamismo de contribuir com os meus conhecimentos ministrando em uma Oficina Gastronômica no Barracão Simioni, nas Feiras pela cidade de Ribeirão Preto, assim como os Eventos do Caipora Festival  que puderam me moldar como uma pessoa melhor e sempre com a crença de que juntos somos mais fortes. Assim em um momento dentro da Pandemia de Covid-19 no ano de 2020 cheguei até os meus estudos no curso Técnico em Cozinha na ETEC – José Martimiano da Silva.
+               Em 2021, termino o primeiro curso dentro dessa carreira que tem muito dinamismo, amor e trabalho duro.
+               Para mim, este curso técnico é o primeiro diploma que carrego sobre a profissão que escolhi depois de uma longa trajetória em outros caminhos, no qual é desafiador e muito encantador traçar este caminho. da Cozinha Quente, dos pratos que acolhem e que te levam à um momento gostoso como um encorpado Raviolli, a panificação fazendo parte deste momento, nutrindo com um básico de "farinha, água e sal" onde podemos ter um acompanhamento ou prato principal sensacionais e ao final uma boa e simples sobremesa, para conduzir o bom e velho cafézinho.
+             </p>
+          </BoxSobre>
+
+          <BoxSobre>
             <Image src={aChef} alt="A Chef" unsized='true' />
-          </Box>
+          </BoxSobre>
        </div>
+         <Link href={{ pathname: '/cardapio'}}> 
+            <ButtonStyle className="button">Veja meus pratos</ButtonStyle>
+         </Link>
+       </BoxMobile>
 
       <Footer>
       </Footer>
