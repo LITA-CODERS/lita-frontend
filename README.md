@@ -5,7 +5,6 @@
 - [📋 Sobre](#Sobre)
 - [🕹 Tecnologias](#Tecnologias)
 - [🧑🏽‍💻 Iniciando o projeto](#Iniciando)
-- [👨🏽‍🔧 Contribuições](#Contribuições)
 - [📝 Licença](#Licença)
 - [🦸 Contatos](#Contatos)
 
@@ -22,11 +21,11 @@
 # Tecnologias
 
 - 🧩 **Tecnologias**
-  - [Javascript] (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-  - [HTML5]
+  - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+  - HTML5
   - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS/)
   - [NodeJS](https://nodejs.org/en/)
-  - [Frameworks]
+  - Frameworks
     - [React](https://pt-br.reactjs.org/)
     - [Next.JS](https://nextjs.org/)
    
