@@ -37,6 +37,13 @@ const GlobalStyle = createGlobalStyle`
       font-size: 42px;
     }
 
+    .titleCardapio { 
+      font-family: "Work Sans";
+      font-weight: bold;
+      color: #441026;
+      font-size: 38px;
+    }
+
     #__next {
       margin: 0;
       padding: 0;
