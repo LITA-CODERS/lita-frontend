@@ -14,7 +14,7 @@
 
 # Sobre
 
-<p align="left"> 📡 Desenvolvimento de website responsivo para a Litá Gastronomia Afetiva, da empreendedora autônoma Talita Ghiotti, baseado em wireframes desenvolvidos pela equipe de UI/UX. Cardápio digital integrado ao banco de dados via API. </p>
+<p align="left"> 📡 Desenvolvimento de website responsivo para a Litá Gastronomia Afetiva, da empreendedora autônoma Talita Ghiotti, baseado em wireframes desenvolvidos pela equipe de UI/UX. Cardápio digital dinâmico integrado ao banco de dados via API. </p>
 
 <!-- TECHNOLOGIES -->
 
