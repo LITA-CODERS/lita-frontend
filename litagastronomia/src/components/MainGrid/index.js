@@ -9,6 +9,8 @@ const MainGrid = styled.main`
   align-items: center;
   justify-items: center;
   align-content: space-around;
+  width: 100vw;
+  height: 100vh;
   
   .fotoDestaque {
     display: flex;
