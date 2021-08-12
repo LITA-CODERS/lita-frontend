@@ -29,7 +29,7 @@ const TabsCardapio = (props) => {
 				SetDishes(response.data.result);
 				toast.success("Busca feita com sucesso");
     } catch (error) {
-      toast.error(`Erro ao busca os pratos ${error}`)
+      toast.error(`Erro ao buscar os pratos ${error}`)
     }
   
 	}
