@@ -84,7 +84,7 @@ $ yarn test ou npm test
 ```
 
 ## 👨🏽‍🚀 Deploy 
-**__Heroku__**: https://github.com/LITA-CODERS/Lita-back-end-rest-api/deployments/activity_log?environment=lita12
+**__Heroku__**: https://lita-frontend.vercel.app/cardapio
 
 
 # Licença
